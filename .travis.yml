@@ -7,4 +7,4 @@ before_install:
   - docker build -t johndraper/docker-react -f Dockerfile.dev .
     
 script:
-    - docker run -e CI=true johndraper/docker-react npm run test 
+    - docker run -e CI=true johndraper/docker-react npm run test -- -- coverage

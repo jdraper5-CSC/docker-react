@@ -18,6 +18,6 @@ deploy:
   bucket_path: "s3://elasticbeanstalk-us-east-2-725695718168/.elasticbeanstalk"
   on:
     branch: master
-  access_key_id: $AWS_ACCESS_KEY
+  access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key:
-    secure: $AWS_SECRET_KEY
+    secure: $AWS_SECRET_ACCESS_KEY

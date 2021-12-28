@@ -6,4 +6,4 @@ before_install:
   - docker build -t jdraper5-CSC/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true jdraper5-CSC/docker-react npm run test -- -- coverage
+  - docker run -e CI=true jdraper29/docker-react npm run test -- -- coverage
